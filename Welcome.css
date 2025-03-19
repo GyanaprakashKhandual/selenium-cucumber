@@ -1,0 +1,31 @@
+.welcome {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    max-width: 100vw;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(165deg, #1A1A40, #3A0CA3, #FF006E);
+    color: whitesmoke;
+    font-size: clamp(16px, 2vw, 24px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        height: auto;
+        padding: 12px;
+        font-size: 16px;
+        text-align: center;
+    }
+}

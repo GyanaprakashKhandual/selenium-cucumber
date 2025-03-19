@@ -1,0 +1,37 @@
+.button {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; 
+    max-width: 48%;
+    margin: 6px auto; 
+    border-radius: 10px;
+    background: linear-gradient(165deg, #1A1A40, #3A0CA3, #FF006E);
+    border-style: none;
+    font-weight: 900;
+    color: white;
+    font-size: clamp(14px, 1.2vw, 18px);
+    padding: 8px 12px;
+}
+
+.button:hover {
+    background: linear-gradient(185deg, #1A1A40, #3A0CA3, #FF006E);
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 90%; 
+        max-width: none;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 100%; 
+        font-size: 14px;
+        padding: 10px;
+    }
+}
